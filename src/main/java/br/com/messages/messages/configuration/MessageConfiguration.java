@@ -18,7 +18,6 @@ public class MessageConfiguration implements WebMvcConfigurer {
     @Bean
     public MessageSource messageSource() {
         ReloadableResourceBundleMessageSource messageSource = new ReloadableResourceBundleMessageSource();
-        System.out.println("Careregou aws mensagens");
         messageSource.setBasename("classpath:messages");
         messageSource.setDefaultEncoding("ISO-8859-1");
         return messageSource;
